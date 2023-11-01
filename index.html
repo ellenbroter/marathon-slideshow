@@ -7,42 +7,55 @@
 		<link rel="stylesheet" href="./css/reset.css">
 		<link rel="stylesheet" href="./css/variables.css">
 		<link rel="stylesheet" href="./css/style.css">
-
+		<link rel="stylesheet" href="./css/fonts.css">
 	</head>
-
 	<body>
 		<div class="slideshow">
+			<div class="slideshow__counter">
+				1 of 5
+			</div>
+
 			<div class="slideshow__slides">
+				<figure class="slideshow__slide slideshow__slide--visible">
+					<img class="slideshow__img" src="./assets/images/valencia_marathon.jpeg" alt="Valencia Marathon">
+					<figcaption class="slideshow__caption"><h1>Valencia Marathon</h1>The Valencia Marathon, known for its flat and fast course, takes place in the stunning Spanish coastal city of Valencia, offering runners a perfect opportunity to achieve personal best times while enjoying beautiful views of the Mediterranean coastline and the city's modern architecture.</figcaption>
+				</figure>
+				
+				<figure class="slideshow__slide">
+					<img class="slideshow__img" src="./assets/images/tokyo_marathon.jpeg" alt="Tokyo Marathon">
+					<figcaption class="slideshow__caption"><h1>Tokyo Marathon</h1>The Tokyo Marathon is one of the prestigious Abbott World Marathon Majors, attracting elite and amateur runners from around the world to compete on the streets of Japan's bustling capital, offering a unique blend of modern and traditional cityscapes.</figcaption>
+				</figure>
 
-				
-					<img class="slideshow__slide-img" src="assets/images/reykjavik_marathon.jpeg">
-				
+				<figure class="slideshow__slide">
+					<img class="slideshow__img" src="./assets/images/sevilla_marathon.jpg" alt="Sevilla Marathon">
+					<figcaption class="slideshow__caption"><h1>Sevilla Marathon</h1>The Sevilla Marathon, held in the heart of the historic city of Seville, Spain, provides runners with a fast and scenic course along the picturesque Guadalquivir River, showcasing the city's rich cultural heritage and vibrant atmosphere.</figcaption>
+				</figure>
 
-				
-					<img class="slideshow__slide-img" src="assets/images/sevilla_marathon.jpg">
-				
+				<figure class="slideshow__slide">
+					<img class="slideshow__img" src="./assets/images/reykjavik_marathon.jpeg" alt="Reykjavik Marathon">
+					<figcaption class="slideshow__caption"><h1>Reykjavik Marathon</h1>The Reykjavik Marathon is an annual event that takes place in Iceland's capital city, offering runners a stunning backdrop of natural beauty, including geothermal hot springs and breathtaking landscapes, as they complete various race distances.</figcaption>
+				</figure>
 
-				
-					<img class="slideshow__slide-img" src="assets/images/tokyo_marathon.jpeg">
-				
-
-				
-					<img class="slideshow__slide-img" src="assets/images/marathon-du-medoc.jpeg">
-					<img class="slideshow__slide-img" src="assets/images/valencia_marathon.jpeg">
-				
+				<figure class="slideshow__slide">
+					<img class="slideshow__img" src="./assets/images/marathon-du-medoc.jpeg" alt="Medoc Marathon">
+					<figcaption class="slideshow__caption"><h1>Medoc Marathon</h1>The Medoc Marathon is a unique and internationally renowned running event that combines the challenge of a traditional marathon with the enjoyment of wine tasting as participants run through the picturesque vineyards of the Bordeaux region.</figcaption>
+				</figure>
 			</div>
 
 			<div class="slideshow__controls">
-				<button class="slideshow__previous-button">&larr;</button>
-				<button class="slideshow__next-button">&rarr;</button>
+				<button class="slideshow__control-button" data-direction="previous"><img src="./assets/arrow-left.svg"></button>
+				<button class="slideshow__control-button" data-direction="next"><img src="./assets/arrow-right.svg"></button>
+			</div>
+			
+			<div class="slideshow__dots">
+				<button class="slideshow__dot" data-index="0"></button>
+				<button class="slideshow__dot" data-index="1"></button>
+				<button class="slideshow__dot" data-index="2"></button>
+				<button class="slideshow__dot" data-index="3"></button>
+				<button class="slideshow__dot" data-index="4"></button>
 			</div>
 
-			<div class="slideshow__dots">
-				<button class="slideshow__dot-button slideshow__dot-button--active"></button>
-				<button class="slideshow__dot-button"></button>
-				<button class="slideshow__dot-button"></button>
-			</div>
 		</div>
-		<script src="./js/app.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
