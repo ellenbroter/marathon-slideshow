@@ -38,7 +38,7 @@ const renderSlideClass = () => {
 }
 
 const renderCounter = () => {
-	counter.textContent = `${index + 1} of ${totalSlides}`;
+	counter.textContent = `${index + 1} / ${totalSlides}`;
 }
 
 const changeSlide = (event) => {
